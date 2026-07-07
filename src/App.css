@@ -1,0 +1,57 @@
+@import "./styles/NavBar.css";
+@import "./styles/Hero.css";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f5f1ea;
+  color: #1f1f1f;
+}
+
+.navbar,
+.spaces,
+.featured,
+.footer {
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  margin: 1rem;
+  border-radius: 1rem;
+  background: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.featured__image {
+  margin-top: 1rem;
+  min-height: 160px;
+  background: #ddd;
+  border-radius: 1rem;
+  display: grid;
+  place-items: center;
+}
+
+.spaces__list,
+.featured__list {
+  display: grid;
+  gap: 1rem;
+}
+
+.spaces__card,
+.featured__card {
+  padding: 1rem;
+  border-radius: 1rem;
+  background: #eee;
+}
+
+.hero__button {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 999px;
+}
