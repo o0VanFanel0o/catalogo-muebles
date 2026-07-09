@@ -7,13 +7,13 @@ function SpaceCategories() {
 
       <div className="spaces__list">
         {spaces.map((space) => (
-          <article className="spaces__card" key={space.id}>
+          <article className="spaces__card" key={space.id} style={{ backgroundImage: `url(${space.image})` }}>
             <span>{space.name}</span>
-          </article>
-        ))}
-      </div>
-    </section>
-  )
+      </article>
+    ))}
+  </div>
+</section>
+);
 }
 
-export default SpaceCategories
+export default SpaceCategories;
