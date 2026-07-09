@@ -1,4 +1,5 @@
 import { spaces } from '../data/spaces'
+import '../styles/SpaceCategories.css'
 
 function SpaceCategories() {
   return (
