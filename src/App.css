@@ -12,7 +12,6 @@ body {
 }
 
 .navbar,
-.featured,
 .footer {
   padding: 1.5rem;
   border: 1px solid #ddd;
@@ -25,26 +24,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.featured__image {
-  margin-top: 1rem;
-  min-height: 160px;
-  background: #ddd;
-  border-radius: 1rem;
-  display: grid;
-  place-items: center;
-}
-
-.featured__list {
-  display: grid;
-  gap: 1rem;
-}
-
-.featured__card {
-  padding: 1rem;
-  border-radius: 1rem;
-  background: #eee;
 }
 
 .hero__button {
