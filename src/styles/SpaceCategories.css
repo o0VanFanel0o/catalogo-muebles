@@ -14,6 +14,7 @@
   
   .spaces__card {
     min-height: 110px;
+    aspect-ratio: 3 / 1;
     padding: 1rem;
     border-radius: 18px;
   
@@ -34,7 +35,7 @@
     background: linear-gradient(
       135deg,
       rgba(0, 0, 0, 0.05),
-      rgba(0, 0, 0, 0.45)
+      rgba(0, 0, 0, 0.28)
     );
   }
   
