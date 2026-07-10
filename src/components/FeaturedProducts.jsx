@@ -9,7 +9,9 @@ function FeaturedProducts() {
       <div className="featured__list">
         {featuredProducts.map((product) => (
           <article className="featured__card" key={product.id}>
-            <div className="featured__image">Imagen</div>
+            <div className="featured__image">
+              <img src={product.image} alt={product.name} />
+            </div>
 
             <div className="featured__content">
               <h3 className="featured__name">{product.name}</h3>
