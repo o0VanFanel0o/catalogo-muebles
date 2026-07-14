@@ -4,7 +4,9 @@
 }
 .featured__card {
     padding: 8px;
-    background-color: aliceblue;
+    background-color: rgb(160, 160, 160);
+    margin: 1rem;
+    border-radius: 15px;
 }
 .featured__image {
     aspect-ratio: 4 / 3;
