@@ -11,11 +11,10 @@ function FeaturedProducts() {
           <article className="featured__card" key={product.id}>
             <div className="featured__image">
               <img src={product.image} alt={product.name} />
-            </div>
-
-            <div className="featured__content">
-              <h3 className="featured__name">{product.name}</h3>
-              <p className="featured__description">{product.description}</p>
+              <div className="featured__content">
+                <h3 className="featured__name">{product.name}</h3>
+                <p className="featured__description">{product.description}</p>
+              </div>
             </div>
           </article>
         ))}
