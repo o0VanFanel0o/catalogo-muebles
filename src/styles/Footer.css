@@ -1,41 +1,7 @@
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 32px;
     margin: 0;
-    padding: 32px 24px;
-    background-color: #7b4444;
-    color: #faddce;
-    text-align: left;
-}
-
-.footer__brand,
-.footer__contact {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.footer__logo,
-.footer__title {
-    margin: 0;
-    color: #fff5ef;
-}
-
-.footer__logo {
-    font-size: 24px;
-    line-height: 1.15;
-}
-
-.footer__title {
-    font-size: 18px;
-    line-height: 1.2;
-}
-
-.footer__description,
-.footer__whats,
-.footer__mail {
+    background-color: #9a5656;
     color: #faddce;
 }
 
