@@ -1,10 +1,11 @@
-import './App.css'
+import {Routes, Route} from 'react-router-dom'
 
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import SpaceCategories from './components/SpaceCategories'
-import FeaturedProducts from './components/FeaturedProducts'
+import HomePage from './pages/HomePage'
 import Footer from './components/Footer'
+import CatalogPage from './pages/CatalogPage'
+
+import './App.css'
 
 function App() {
   return (
@@ -12,9 +13,10 @@ function App() {
       <Navbar />
 
       <main>
-        <Hero />
-        <SpaceCategories />
-        <FeaturedProducts />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/catalogo" element={<CatalogPage />} />
+        </Routes>
       </main>
 
       <Footer />
