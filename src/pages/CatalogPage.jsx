@@ -1,3 +1,6 @@
+import { products } from '../data/products'
+import ProductCard from '../components/ProductCard'
+
 function CatalogPage() {
     return (
       <main className="catalog">
@@ -7,8 +10,10 @@ function CatalogPage() {
         </header>
   
         <section className="catalog__products">
-            <p>Lista de muebles</p>
-          
+          {products.map((product) => (
+          <ProductCard key={product.id} product={product} />
+          ))}
+            
         </section>
         
         <section className="catalog__filters">
