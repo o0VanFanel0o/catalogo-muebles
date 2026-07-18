@@ -1,8 +1,8 @@
 .footer {
-    margin: 0;
     display: flex;
     background-color: #9a5656;
     color: #faddce;
+    margin-top: 4rem;
 }
 
 .footer__whats {
