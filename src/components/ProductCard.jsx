@@ -29,7 +29,7 @@ function ProductCard({ product }) {
         type="button"
         onClick={() => setIsExpanded(false)}
       >
-        Cerrar
+        X
       </button>
 
       <img
