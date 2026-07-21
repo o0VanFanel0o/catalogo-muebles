@@ -13,6 +13,8 @@
 
 .footer__social {
     display: flex;
+    justify-content: flex-end;
+    width: 100%;
     gap: 12px;
     margin-top: 4px;
 }

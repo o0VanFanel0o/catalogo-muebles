@@ -62,3 +62,16 @@
         grid-template-columns: 1fr;
     }
 }
+
+.product-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.7);
+  }
