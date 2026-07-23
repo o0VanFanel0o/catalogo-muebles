@@ -86,4 +86,10 @@
     height: 50vh;
     object-fit: cover;
     display: block;
+}
+.product-modal__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1;
   }
