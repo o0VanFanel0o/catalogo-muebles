@@ -32,7 +32,6 @@ function ProductCard({ product }) {
               className="product-modal__close"
               type="button"
               onClick={() => setIsExpanded(false)}
-              aria-label="Cerrar detalles"
             >
               ×
             </button>
