@@ -2,6 +2,15 @@ import { products } from '../data/products'
 import { useState } from 'react'
 import ProductCard from '../components/ProductCard'
 
+const spaceFilters = [
+  {label:'Todos', value: 'all'},
+  {label:'Baño', value: 'bano'},
+  {label:'Cocina', value: 'cocina'},
+  {label:'Recámara', value: 'recamara'},
+  {label:'Comedor', value: 'comedor'},
+  {label:'Sala', value: 'sala'},
+]
+
 function CatalogPage() {
   
   const [activeSpace, setActiveSpace] = useState('all')
@@ -30,8 +39,15 @@ function CatalogPage() {
         </section>
         
         <section className="catalog__filters">
-          <button type='button' onClick={() => setActiveSpace ('all')}>Todos</button>
-          <button type='button' onClick={() => setActiveSpace ('recamara')}>Recamara</button>
+          {spaceFilters.map((filter) => (
+            <button
+              key={filter.value}
+              type="button"
+              onClick={() => setActiveSpace(filter.value)}
+            >
+              {filter.label}
+            </button>
+          ))}
         </section>
       </main>
     )
