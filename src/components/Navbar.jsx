@@ -53,7 +53,7 @@ function Navbar() {
             </li>
   
             <li className="navbar__item">
-              <a href="#" className="navbar__link">Contacto</a>
+              <Link to="/contact" className="navbar__link">Contacto</Link>
             </li>
           </ul>
         </nav>
