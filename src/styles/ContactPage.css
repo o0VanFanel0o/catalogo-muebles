@@ -1,7 +1,131 @@
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 100%;
-    max-width: 500px;
+/* ===== BASE ===== */
+.contact-page {
+  min-height: 100vh;
+  background-color: #F5EFE6;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  padding: 5rem 6rem;
+  align-items: start;
+}
+
+/* ===== INTRO — columna izquierda ===== */
+.contact-page__intro {
+  position: sticky;
+  top: 5rem;
+}
+
+.contact-page__header {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #3B2314;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.5px;
+}
+
+.contact-page__intro p {
+  font-size: 1.1rem;
+  color: #6B4C35;
+  line-height: 1.8;
+  max-width: 380px;
+}
+
+/* ===== FORM — columna derecha ===== */
+.contact-page__form {
+  background-color: #FDFAF6;
+  border-radius: 20px;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: 0 4px 24px rgba(59, 35, 20, 0.08);
+  border: 1px solid #E8DDD1;
+}
+
+/* ===== CAMPOS ===== */
+.contact-page__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-page__field label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #3B2314;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.contact-page__field input,
+.contact-page__field select,
+.contact-page__field textarea {
+  padding: 0.9rem 1rem;
+  border: 1.5px solid #D9C9B8;
+  border-radius: 10px;
+  background-color: #FAF6F1;
+  font-size: 1rem;
+  color: #3B2314;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-family: inherit;
+  resize: none;
+}
+
+.contact-page__field input::placeholder,
+.contact-page__field textarea::placeholder {
+  color: #B8A090;
+}
+
+.contact-page__field input:focus,
+.contact-page__field select:focus,
+.contact-page__field textarea:focus {
+  border-color: #8B5E3C;
+  box-shadow: 0 0 0 4px rgba(139, 94, 60, 0.12);
+  background-color: #FFFFFF;
+}
+
+/* ===== BOTÓN ===== */
+.contact-page__btn {
+  margin-top: 0.5rem;
+  padding: 1rem;
+  background-color: #3B2314;
+  color: #F5EFE6;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.15s;
+}
+
+.contact-page__btn:hover {
+  background-color: #5C3520;
+}
+
+.contact-page__btn:active {
+  transform: scale(0.98);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .contact-page {
+      grid-template-columns: 1fr;
+      padding: 3rem 1.5rem;
+      gap: 2rem;
   }
+
+  .contact-page__intro {
+      position: static;
+  }
+
+  .contact-page__header {
+      font-size: 2rem;
+  }
+
+  .contact-page__form {
+      padding: 2rem 1.5rem;
+  }
+}
