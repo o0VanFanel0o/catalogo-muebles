@@ -37,10 +37,11 @@ function ContactPage() {
                         <label htmlFor="message">Describe tu proyecto en detalle</label>
                         <textarea name="message" id="message" rows="5" required></textarea>
                     </div>
+                    <button type="submit" className="contact-page__btn">Enviar</button>
                 </form>
             </section>
-         </main>
-    )
+        </main>
+    );
 }
 
-export default ContactPage
+export default ContactPage;
