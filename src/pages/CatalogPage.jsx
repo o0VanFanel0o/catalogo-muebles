@@ -9,6 +9,7 @@ const spaceFilters = [
   {label:'Recámara', value: 'recamara'},
   {label:'Comedor', value: 'comedor'},
   {label:'Sala', value: 'sala'},
+  {label:'Puertas', value: 'puertas'},
 ]
 
 function CatalogPage() {
