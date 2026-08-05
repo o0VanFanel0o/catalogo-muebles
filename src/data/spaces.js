@@ -3,6 +3,7 @@ import cocinaImg from '../assets/catalogo-muebles-backgrounds/cocina.png'
 import recamaraImg from '../assets/catalogo-muebles-backgrounds/recamara.png'
 import comedorImg from '../assets/catalogo-muebles-backgrounds/comedor.png'
 import salaImg from '../assets/catalogo-muebles-backgrounds/sala.png'
+import puertasImg from '../assets/catalogo-muebles-backgrounds/puertas.jpg'
 
 export const spaces = [
   {
@@ -29,5 +30,10 @@ export const spaces = [
     id: 'sala',
     name: 'Sala',
     image: salaImg,
+  },
+  {
+    id: 'puertas',
+    name: 'Puertas',
+    image: puertasImg,
   },
 ]
