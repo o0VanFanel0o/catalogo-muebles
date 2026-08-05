@@ -15,13 +15,13 @@ function ContactPage() {
                     </div>
                     <div className="contact-page__field">
                         <label htmlFor="whatsapp">Numero de WhatsApp</label>
-                        <input type="tel" id="name" name="name" autoComplete="tel" required />
+                        <input type="tel" id="whatsapp" name="whatsapp" autoComplete="tel" required />
                     </div>
                     <div className="contact-page__field">
                         <label htmlFor="email">Correo Electronico</label>
                         <input type="email" id="email" name="email" autoComplete="email" />
                     </div>
-                    <div>
+                    <div className="contact-page__field">
                         <label htmlFor="space">Selecciona el espacio</label>
                         <select name="space" id="space" defaultValue="" required>
                             <option value="" disabled>Espacio</option>
@@ -33,10 +33,15 @@ function ContactPage() {
                             <option value="other">Otro</option>
                         </select>
                     </div>
+                    <div className="contact-page__field">
+                        <label htmlFor="message">Describe tu proyecto en detalle</label>
+                        <textarea name="message" id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" className="contact-page__btn">Enviar</button>
                 </form>
             </section>
-         </main>
-    )
+        </main>
+    );
 }
 
-export default ContactPage
+export default ContactPage;
