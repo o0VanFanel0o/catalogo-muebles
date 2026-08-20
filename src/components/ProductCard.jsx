@@ -11,7 +11,7 @@ function ProductCard({ product }) {
         type="button"
         onClick={() => setIsExpanded(true)}
       >
-        <img src={product.image} alt={product.name} />
+        <img src={product.images?.[0]?.url || ''} alt={product.name} />
         <div className="product-card__content">
           <h2 className="product-card__name">{product.name}</h2>
           <p className="product-card__meta">
@@ -38,7 +38,7 @@ function ProductCard({ product }) {
 
             <img
               className="product-modal__image"
-              src={product.image}
+              src={product.images?.[0]?.url}
               alt={product.name}
             />
 
