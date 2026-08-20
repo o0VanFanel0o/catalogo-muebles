@@ -3,6 +3,7 @@ import '../styles/ProductCard.css'
 
 function ProductCard({ product }) {
   const [isExpanded, setIsExpanded] = useState(false)
+  const [currentImage, setCurrentImage] = useState(0)
 
   return (
     <article className="product-card">
@@ -31,24 +32,21 @@ function ProductCard({ product }) {
             <button
               className="product-modal__close"
               type="button"
-              onClick={() => setIsExpanded(false)}
+              onClick={() => {setIsExpanded(false); setCurrentImage(0)}}
             >
               ×
             </button>
 
-            <img
-              className="product-modal__image"
-              src={product.images?.[0]?.url}
-              alt={product.name}
-            />
-
-            <div className="product-modal__info">
-              <h2 id={`product-title-${product.id}`}>{product.name}</h2>
-              <p>{product.description}</p>
-              <p>Espacio: {product.space}</p>
-              <p>Tipo: {product.type}</p>
-              <p>Material: {product.material}</p>
-              <p>Acabado: {product.finish}</p>
+            <div className="product-modal__gallery">
+              <img className="product-modal__image" src={product.images?.[currentImage]?.url} alt={product.name} />
+              <div className="product-modal__info">
+                <h2>{product.name}</h2>
+                <p>{product.description}</p>
+                <p>Espacio: {product.space}</p>
+                <p>Tipo: {product.type}</p>
+                <p>Material: {product.material}</p>
+                <p>Acabado: {product.finish}</p>
+              </div>
             </div>
           </div>
         </div>
