@@ -1,5 +1,4 @@
-import { products } from '../data/products'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import ProductCard from '../components/ProductCard'
 
 const spaceFilters = [
@@ -13,9 +12,23 @@ const spaceFilters = [
 ]
 
 function CatalogPage() {
-  
+  const [products, setProducts] = useState([])
   const [activeSpace, setActiveSpace] = useState('all')
+  const [loading, setLoading] = useState(true)
 
+  useEffect(() => {
+    fetch('https://homelab.tailab986e.ts.net/api/productos')
+      .then((response) => response.json())
+      .then((data) => {
+        setProducts(data)
+        setLoading(false)
+      })
+      .catch((error) => {
+        console.error('Error al cargar productos:', error)
+        setLoading(false)
+      })
+  }, [])
+  
   let filteredProducts 
     if (activeSpace === 'all') {
       filteredProducts = products
@@ -26,6 +39,9 @@ function CatalogPage() {
     }
 
     return (
+      loading ? (
+        <p>Cargando...</p>
+      ) : (
       <main className="catalog">
         <header className="catalog__header">
           <h1>Catálogo</h1>
@@ -52,6 +68,6 @@ function CatalogPage() {
         </section>
       </main>
     )
-  }
+  )}
   
   export default CatalogPage
