@@ -38,7 +38,11 @@ function ProductCard({ product }) {
             </button>
 
             <div className="product-modal__gallery">
-              <img className="product-modal__image" src={product.images?.[currentImage]?.url} alt={product.name} />
+              <div className='product-modal__carousel'>
+                {product.images.map((image, index) => (
+                  <img key={index} className="product-modal__img" src={image.url} alt={product.name} />
+                ))}
+              </div>
               <div className="product-modal__info">
                 <h2>{product.name}</h2>
                 <p>{product.description}</p>
