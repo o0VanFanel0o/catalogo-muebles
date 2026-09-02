@@ -50,8 +50,32 @@
     transition: transform 0.25s ease-out;
   }
   
-  .catalog__filter .hover-underline-animation:hover:after {
+  .catalog__filter .hover-underline-animation:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
-  
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 768px) {
+    .catalog__filters {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        gap: 0.5rem;
+        padding: 0 1rem;
+        justify-content: flex-start;
+      }
+    
+      .catalog__filters::-webkit-scrollbar {
+        display: none;
+      }
+    
+      .catalog__filter {
+        flex: 0 0 auto;
+      }
+      .catalog__filter span {
+        white-space: nowrap;
+        display: inline-block;
+      }
+    }
