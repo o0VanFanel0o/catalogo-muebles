@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import ProductCard from '../components/ProductCard'
+import '../styles/CatalogPage.css'
 
 const spaceFilters = [
   {label:'Todos', value: 'all'},
@@ -47,6 +48,18 @@ function CatalogPage() {
           <h1>Catálogo</h1>
           <p>Explora muebles a medida por espacio, material o tipo.</p>
         </header>
+
+        <section className="catalog__filters">
+          {spaceFilters.map((filter) => (
+            <button className="catalog__filter"
+            key={filter.value}
+            type="button"
+            onClick={() => setActiveSpace(filter.value)}
+          >
+            <span className="hover-underline-animation">{filter.label}</span>
+          </button>
+          ))}
+        </section>
   
         <section className="catalog__products">
           {filteredProducts.map((product) => (
@@ -55,17 +68,6 @@ function CatalogPage() {
           } 
         </section>
         
-        <section className="catalog__filters">
-          {spaceFilters.map((filter) => (
-            <button
-              key={filter.value}
-              type="button"
-              onClick={() => setActiveSpace(filter.value)}
-            >
-              {filter.label}
-            </button>
-          ))}
-        </section>
       </main>
     )
   )}
