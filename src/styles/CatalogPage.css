@@ -1,3 +1,17 @@
+.catalog__products {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    padding: 40px 24px 56px;
+}
+.catalog__products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
 /* ===== FILTERS ===== */
 .catalog__filters {
     display: flex;
