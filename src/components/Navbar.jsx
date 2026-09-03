@@ -47,11 +47,6 @@ function Navbar() {
             <li className="navbar__item">
               <Link to="/catalogo" className="navbar__link">Catálogo</Link>
             </li>
-  
-            <li className="navbar__item">
-              <a href="#" className="navbar__link">Materiales</a>
-            </li>
-  
             <li className="navbar__item">
               <Link to="/contact" className="navbar__link">Contacto</Link>
             </li>
