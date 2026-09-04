@@ -1,9 +1,16 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import '../styles/ProductCard.css'
 
 function ProductCard({ product }) {
   const [isExpanded, setIsExpanded] = useState(false)
   const [currentImage, setCurrentImage] = useState(0)
+  useEffect(() => {
+    if (isExpanded) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'auto'
+    }
+  }, [isExpanded])
 
   return (
     <article className="product-card">
