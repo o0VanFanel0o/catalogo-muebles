@@ -9,10 +9,10 @@ function Footer() {
           <p className="footer__description">Muebles a medida para cada espacio de su hogar.</p>
         </div>
         <div className="footer__social">
-            <a href="https://www.instagram.com/tu_usuario" target="_blank" rel="noreferrer" aria-label="Instagram">
+            <a href="https://www.instagram.com/prodima.mx/" target="_blank" rel="noreferrer" aria-label="Instagram">
               <FaInstagram />
             </a>
-            <a href="https://www.facebook.com/tu_usuario" target="_blank" rel="noreferrer" aria-label="Facebook">
+            <a href="https://www.facebook.com/prodimaoficial?locale=es_LA" target="_blank" rel="noreferrer" aria-label="Facebook">
               <FaFacebookF />
             </a>
           </div>
