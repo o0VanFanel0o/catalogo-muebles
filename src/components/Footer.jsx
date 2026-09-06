@@ -5,7 +5,7 @@ function Footer() {
     return (
       <footer className="footer">
         <div className="footer__brand">
-          <img src='src\assets\public\logo\Prodima.png' className="footer__logo"/>
+          <img src='src\assets\public\logo\prodima.png' className="footer__logo"/>
           <p className="footer__description">Muebles a medida para cada espacio de su hogar.</p>
         </div>
         <div className="footer__social">

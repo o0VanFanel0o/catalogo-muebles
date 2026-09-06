@@ -40,7 +40,7 @@ function Navbar() {
     return (
       <header className="navbar" ref={navbarRef}>
         <Link to="/" className="navbar__logo">
-          <img src="src\assets\public\logo\Prodima.png" alt="Logo" />
+          <img src="src\assets\public\logo\prodima.png" alt="Logo" />
         </Link>
   
         <nav className="navbar__nav">
