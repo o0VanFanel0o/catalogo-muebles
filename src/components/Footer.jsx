@@ -5,9 +5,10 @@ function Footer() {
     return (
       <footer className="footer">
         <div className="footer__brand">
-          <h2 className="footer__logo">Catalogo Muebles</h2>
-          <p className="footer__description">Muebles a medida</p>
-          <div className="footer__social">
+          <img src='src\assets\public\logo\Prodima.png' className="footer__logo"/>
+          <p className="footer__description">Muebles a medida para cada espacio de su hogar.</p>
+        </div>
+        <div className="footer__social">
             <a href="https://www.instagram.com/tu_usuario" target="_blank" rel="noreferrer" aria-label="Instagram">
               <FaInstagram />
             </a>
@@ -15,7 +16,6 @@ function Footer() {
               <FaFacebookF />
             </a>
           </div>
-        </div>
         
       </footer>
     )

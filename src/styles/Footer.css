@@ -1,28 +1,31 @@
 .footer {
     display: flex;
-    background-color: rgb(19, 57, 80);
-    color: #faddce;
+    background: linear-gradient(to bottom, rgb(244, 240, 233), rgb(242, 242, 242));
+    color: rgb(217, 145, 0);
     margin-top: 4rem;
     justify-content: space-between;
-    gap: 1rem;
+    align-items: center;
 }
 
 .footer__brand {
-    text-align: start;
+    text-align:center;
+    gap:1rem;
+    display: flex;
+}
+.footer__logo {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+}
+.footer__description {
+    color:rgb(217, 145, 0);
 }
 /* ===== Socials ===== */
-.footer__whats {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-}
 
 .footer__social {
     display: flex;
     justify-content: flex-end;
-    width: 100%;
     gap: 12px;
-    margin-top: 4px;
 }
 
 .footer__social a {
@@ -44,8 +47,6 @@
 
 @media (max-width: 640px) {
     .footer {
-        flex-direction: column;
-        gap: 1rem;
         padding: 28px 16px;
         text-align: center;
     }
