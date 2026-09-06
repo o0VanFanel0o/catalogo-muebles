@@ -18,10 +18,11 @@
         0 8px 30px rgba(0, 0, 0, 0.18);
 }
 
-.navbar__logo img {
-    height: 40px;
-    width: 40px;
+.navbar__logo img{
+    width: 30px;
+    height: auto;
     border-radius: 50%;
+    display: block;
 }
 
 .navbar__list {
@@ -34,7 +35,7 @@
 
 .navbar__link {
     text-decoration: none;
-    color: #3F6361;
-    font-size: .8rem;
+    color: rgb(6, 20, 28);
+    font-size: 1rem;
     font-weight: 600;
 }
