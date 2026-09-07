@@ -1,7 +1,7 @@
 .catalog__header {
   display: flex;
   padding: 2rem;
-  align-items: baseline;
+  align-items: center;
   gap: 1rem;
   p {
     color: rgb(190, 92, 1);
@@ -78,7 +78,6 @@
     transform: scaleX(1);
     transform-origin: bottom left;
   }
-  /* ===== RESPONSIVE ===== */
   @media (max-width: 768px) {
     .catalog__filters {
         display: flex;

@@ -4,6 +4,7 @@
     border: 0;
     background: transparent;
     height: 100%;
+    justify-content: center;
   }
   
   .hero__image {
