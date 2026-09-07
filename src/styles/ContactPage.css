@@ -15,12 +15,18 @@
 }
 
 .contact-page__header {
-  font-size: 3rem;
-  font-weight: 700;
+  padding: 2rem;
+  display: flex;
+  font-size: 2rem;
+  gap: 20px;
   color: #3B2314;
   line-height: 1.1;
-  margin-bottom: 1.5rem;
-  letter-spacing: -0.5px;
+  align-items: center;
+}
+.contact-page__header p{
+    font-size: .90rem;
+    color: rgb(190, 92, 1);
+
 }
 
 .contact-page__intro p {
@@ -117,9 +123,6 @@
       position: static;
   }
 
-  .contact-page__header {
-      font-size: 2rem;
-  }
 
   .contact-page__form {
       padding: 2rem 1.5rem;

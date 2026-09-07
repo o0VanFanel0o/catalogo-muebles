@@ -46,9 +46,11 @@ function ContactPage() {
 
     return (
         <main>
-            <h1 className="contact-page__header">Contacto</h1>
-            <p>Cuéntanos sobre el mueble o espacio que tienes en mente.
-            Nos pondremos en contacto contigo para conocer más detalles.</p>
+            <div className="contact-page__header">
+                <h1>Contacto</h1>
+                <p>Cuéntanos sobre el mueble o espacio que tienes en mente.
+                Nos pondremos en contacto contigo para conocer más detalles.</p>
+            </div>
             <section className="contact-page__content">
                 <form onSubmit={handleSubmit}>
                     <div className="contact-page__field">
