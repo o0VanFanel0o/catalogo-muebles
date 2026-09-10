@@ -39,17 +39,14 @@ desplegada en servidor local con Docker y PostgreSQL.
 - Diseño cálido y artesanal adaptado a la identidad del negocio
 
 ## 📁 Estructura
+```
 catalogo-muebles/
 │
 ├── public/
 │   ├── catalogo-muebles/
 │   │   └── BD-1/
 │   │       ├── buro-001/
-│   │       │   └── img-1.jpg
 │   │       ├── closet-001/
-│   │       │   ├── img-1.jpg
-│   │       │   ├── img-2.jpg
-│   │       │   └── ...
 │   │       ├── cocina-001/
 │   │       ├── cocina-002/
 │   │       ├── escaleras-001/
@@ -59,21 +56,12 @@ catalogo-muebles/
 │   │       ├── separador-001/
 │   │       └── servicio-001/
 │   ├── fonts/
-│   │   ├── PlayfairDisplaySC-Regular.ttf
-│   │   ├── PlayfairDisplaySC-Bold.ttf
-│   │   ├── PlayfairDisplaySC-Black.ttf
-│   │   ├── PlayfairDisplaySC-Italic.ttf
-│   │   ├── PlayfairDisplaySC-BoldItalic.ttf
-│   │   └── PlayfairDisplaySC-BlackItalic.ttf
 │   ├── logo/
-│   │   └── prodima.png
 │   ├── favicon.svg
 │   └── icons.svg
 │
 ├── src/
 │   ├── assets/
-│   │   └── fonts/
-│   │
 │   ├── components/
 │   │   ├── FeaturedProducts.jsx
 │   │   ├── Footer.jsx
@@ -81,13 +69,11 @@ catalogo-muebles/
 │   │   ├── Navbar.jsx
 │   │   ├── ProductCard.jsx
 │   │   └── SpaceCategories.jsx
-│   │
 │   ├── pages/
 │   │   ├── CatalogPage.jsx
 │   │   ├── ContactPage.jsx
 │   │   ├── HomePage.jsx
 │   │   └── MaterialsPage.jsx
-│   │
 │   ├── styles/
 │   │   ├── CatalogPage.css
 │   │   ├── ContactPage.css
@@ -98,7 +84,6 @@ catalogo-muebles/
 │   │   ├── NavBar.css
 │   │   ├── ProductCard.css
 │   │   └── SpaceCategories.css
-│   │
 │   ├── App.css
 │   ├── App.jsx
 │   ├── index.css
@@ -109,6 +94,7 @@ catalogo-muebles/
 ├── package-lock.json
 ├── vite.config.js
 └── README.md
+```
 
 ## ⚙️ Variables de entorno
 
