@@ -29,18 +29,18 @@
     bottom: 0;
     padding: 56px 18px 18px;
     background: linear-gradient(180deg, rgba(8, 6, 13, 0), rgba(8, 6, 13, 0.78));
-    color: #fff;
+    color: rgb(245, 241, 234);
 }
 
 .featured__name {
     margin: 0 0 8px;
-    color: #fff;
+    color: rgb(245, 241, 234);
     font-size: 20px;
     line-height: 1.2;
 }
 
 .featured__description {
-    color: #f5f0ec;
+    color: rgb(245, 241, 234);
     line-height: 1.45;
 }
 

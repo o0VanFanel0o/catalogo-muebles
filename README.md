@@ -1,16 +1,132 @@
-# React + Vite
+# Catálogo de Muebles 🪑
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web full stack para catálogo y contacto de muebles a medida.
+Frontend construido con React + Vite, conectado a una API REST propia
+desplegada en servidor local con Docker y PostgreSQL.
 
-Currently, two official plugins are available:
+## 🔗 Links
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🌐 Demo en vivo: [catalogo-muebles-phi.vercel.app](https://catalogo-muebles-phi.vercel.app)
+- 💻 Frontend (este repo): [github.com/o0VanFanel0o/catalogo-muebles](https://github.com/o0VanFanel0o/catalogo-muebles)
+- ⚙️ Backend: [github.com/o0VanFanel0o/catalogo-muebles_api](https://github.com/o0VanFanel0o/catalogo-muebles_api)
 
-## React Compiler
+## 📸 Vista previa
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![Vista previa](screenshot.gif)
 
-## Expanding the ESLint configuration
+## 🛠️ Stack tecnológico
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Frontend**
+- React + Vite
+- React Router DOM
+- CSS modular con variables
+- Deploy en Vercel
+
+**Backend**
+- Node.js + Express
+- PostgreSQL 16
+- Docker + red personalizada
+- Nodemailer — envío de correos reales
+- Tailscale Funnel — acceso HTTPS público seguro
+
+## ✨ Funcionalidades
+
+- Catálogo de productos con imágenes múltiples por producto
+- Filtros por espacio (recámara, sala, cocina, comedor, baño)
+- Filtros por tipo de mueble y material
+- Formulario de contacto con envío de correo real vía Gmail
+- Base de datos con 10 productos y 36 imágenes
+- Diseño cálido y artesanal adaptado a la identidad del negocio
+
+## 📁 Estructura
+catalogo-muebles/
+│
+├── public/
+│   ├── catalogo-muebles/
+│   │   └── BD-1/
+│   │       ├── buro-001/
+│   │       │   └── img-1.jpg
+│   │       ├── closet-001/
+│   │       │   ├── img-1.jpg
+│   │       │   ├── img-2.jpg
+│   │       │   └── ...
+│   │       ├── cocina-001/
+│   │       ├── cocina-002/
+│   │       ├── escaleras-001/
+│   │       ├── escritorio-001/
+│   │       ├── gabinete-001/
+│   │       ├── lavadero-001/
+│   │       ├── separador-001/
+│   │       └── servicio-001/
+│   ├── fonts/
+│   │   ├── PlayfairDisplaySC-Regular.ttf
+│   │   ├── PlayfairDisplaySC-Bold.ttf
+│   │   ├── PlayfairDisplaySC-Black.ttf
+│   │   ├── PlayfairDisplaySC-Italic.ttf
+│   │   ├── PlayfairDisplaySC-BoldItalic.ttf
+│   │   └── PlayfairDisplaySC-BlackItalic.ttf
+│   ├── logo/
+│   │   └── prodima.png
+│   ├── favicon.svg
+│   └── icons.svg
+│
+├── src/
+│   ├── assets/
+│   │   └── fonts/
+│   │
+│   ├── components/
+│   │   ├── FeaturedProducts.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── ProductCard.jsx
+│   │   └── SpaceCategories.jsx
+│   │
+│   ├── pages/
+│   │   ├── CatalogPage.jsx
+│   │   ├── ContactPage.jsx
+│   │   ├── HomePage.jsx
+│   │   └── MaterialsPage.jsx
+│   │
+│   ├── styles/
+│   │   ├── CatalogPage.css
+│   │   ├── ContactPage.css
+│   │   ├── FeaturedProducts.css
+│   │   ├── fonts.css
+│   │   ├── Footer.css
+│   │   ├── Hero.css
+│   │   ├── NavBar.css
+│   │   ├── ProductCard.css
+│   │   └── SpaceCategories.css
+│   │
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+│
+├── .gitignore
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
+
+## ⚙️ Variables de entorno
+
+Crea un archivo `.env` en la raíz:
+
+```bash
+VITE_API_URL=tu_url_publica_de_la_api
+```
+
+## 🚀 Instalación local
+
+```bash
+git clone https://github.com/o0VanFanel0o/catalogo-muebles
+cd catalogo-muebles
+npm install
+npm run dev
+```
+
+## 👤 Autor
+
+- GitHub: [@o0VanFanel0o](https://github.com/o0VanFanel0o)
