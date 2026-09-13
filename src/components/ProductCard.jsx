@@ -1,9 +1,26 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import '../styles/ProductCard.css'
 
 function ProductCard({ product }) {
   const [isExpanded, setIsExpanded] = useState(false)
   const [currentImage, setCurrentImage] = useState(0)
+  const carouselRef = useRef(null)
+  const [activeImage, setActiveImage] = useState(0)
+
+  useEffect(() => {
+    const carousel = carouselRef.current
+    if (!carousel) return
+  
+    const handleScroll = () => {
+      const scrollLeft = carousel.scrollLeft
+      const width = carousel.clientWidth
+      const index = Math.round(scrollLeft / width)
+      setActiveImage(index)
+    }
+  
+    carousel.addEventListener('scroll', handleScroll)
+    return () => carousel.removeEventListener('scroll', handleScroll)
+  }, [isExpanded])
   useEffect(() => {
     if (isExpanded) {
       document.body.style.overflow = 'hidden'
@@ -45,11 +62,21 @@ function ProductCard({ product }) {
             </button>
 
             <div className="product-modal__gallery">
-              <div className='product-modal__carousel'>
+              <div className='product-modal__carousel'ref = {carouselRef}>
                 {product.images.map((image, index) => (
                   <img key={index} className="product-modal__img" src={image.url} alt={product.name} />
                 ))}
               </div>
+              {product.images.length > 1 && (
+                <div className="product-modal__dots">
+                  {product.images.map((_, index) => (
+                    <span
+                      key={index}
+                      className={`product-modal__dot ${activeImage === index ? 'active' : ''}`}
+                    />
+                  ))}
+                </div>
+              )}
               <div className="product-modal__info">
                 <h2>{product.name}</h2>
                 <p>{product.description}</p>
