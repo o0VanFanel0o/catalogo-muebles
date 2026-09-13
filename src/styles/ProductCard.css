@@ -4,7 +4,6 @@
     text-align: left;
     background-color: #f1eeee;
     border: 1px solid var(--border);
-    border-radius: 12px;
     box-shadow: var(--shadow);
 }
 
@@ -83,7 +82,7 @@
     margin: 0 auto;
 }
 .product-modal {
-    margin: 1rem;
+    margin: 0;
     border-radius: 12px;
     position: fixed;
     inset: 0;
@@ -100,10 +99,9 @@
 }
 
 .product-modal__content {
-    width: 90%;
+    width: 100%;
     max-width: 900px;
     position: relative;
-    background: transparent;
     border-radius: 12px;
     overflow: hidden;
     margin: auto 0;
@@ -149,7 +147,7 @@
     z-index: 1;
     width: 40px;
     height: 40px;
-    color: #000;
+    color: rgb(238, 230, 217);
     font-size: 28px;
     line-height: 1;
     border: 0;
@@ -158,12 +156,9 @@
 }
 
 .product-modal__info {
-    margin: 5px;
     padding: 1rem;
-    border-radius: 12px;
     width: 100%;
     align-self: center;
     justify-self: center;
-    background-color: rgba(255, 255, 255, 0.9);
 }
 
