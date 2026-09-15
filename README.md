@@ -12,7 +12,7 @@ desplegada en servidor local con Docker y PostgreSQL.
 
 ## 📸 Vista previa
 
-![Vista previa](screenshot.gif)
+![Vista previa](/public/demo.gif)
 
 ## 🛠️ Stack tecnológico
 
