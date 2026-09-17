@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import ProductCard from '../components/ProductCard'
 import '../styles/CatalogPage.css'
 
@@ -14,7 +15,8 @@ const spaceFilters = [
 
 function CatalogPage() {
   const [products, setProducts] = useState([])
-  const [activeSpace, setActiveSpace] = useState('all')
+  const [searchParams, setSearchParams] = useSearchParams()
+  const activeSpace = searchParams.get('space') || 'all'
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
@@ -54,7 +56,7 @@ function CatalogPage() {
             <button className="catalog__filter"
             key={filter.value}
             type="button"
-            onClick={() => setActiveSpace(filter.value)}
+            onClick={() => setSearchParams(filter.value === 'all' ? {} : { space: filter.value })}
           >
             <span className="hover-underline-animation">{filter.label}</span>
           </button>
