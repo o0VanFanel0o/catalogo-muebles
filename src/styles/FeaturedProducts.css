@@ -15,10 +15,10 @@
 }
 
 .featured__card {
-    background-color: #f1eeee;
-    border: 1px solid var(--border);
-    box-shadow: var(--shadow);
-}
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
 
 .featured__content {
     position: absolute;

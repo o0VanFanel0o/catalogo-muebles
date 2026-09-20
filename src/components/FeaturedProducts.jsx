@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import '../styles/FeaturedProducts.css'
 
 function FeaturedProducts() {
@@ -25,7 +26,9 @@ function FeaturedProducts() {
 
       <div className="featured__list">
         {productos.slice(0, 3).map((product) => (
-          <article className="featured__card" key={product.id}>
+          <Link to={`/catalogo?space=${product.id}`} 
+          className="featured__card" 
+          key={product.id}>
             <div className="featured__image">
               <img src={product.images?.[0]?.url} alt={product.name} />
               <div className="featured__content">
@@ -33,7 +36,7 @@ function FeaturedProducts() {
                 <p className="featured__description">{product.description}</p>
               </div>
             </div>
-          </article>
+            </Link>
         ))}
       </div>
     </section>
