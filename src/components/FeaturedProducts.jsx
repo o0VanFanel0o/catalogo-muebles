@@ -26,7 +26,7 @@ function FeaturedProducts() {
 
       <div className="featured__list">
         {productos.slice(0, 3).map((product) => (
-          <Link to={`/catalogo?space=${product.id}`} 
+          <Link to={`/producto/${product.id}`} 
           className="featured__card" 
           key={product.id}>
             <div className="featured__image">
