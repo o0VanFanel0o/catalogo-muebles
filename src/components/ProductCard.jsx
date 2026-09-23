@@ -78,12 +78,15 @@ function ProductCard({ product }) {
                 </div>
               )}
               <div className="product-modal__info">
-                <h2>{product.name}</h2>
-                <p>{product.description}</p>
-                <p>Espacio: {product.space}</p>
-                <p>Tipo: {product.type}</p>
-                <p>Material: {product.material}</p>
-                <p>Acabado: {product.finish}</p>
+                <h2 className="product-modal__name">{product.name}</h2>
+                <p className="product-modal__description">{product.description}</p>
+                <ul className="product-modal__specs">
+                  <li><strong>Espacio:</strong> {product.space}</li>
+                  <li><strong>Tipo:</strong> {product.type}</li>
+                  <li><strong>Material:</strong> {product.material}</li>
+                  <li><strong>Acabado:</strong> {product.finish}</li>
+                  <li><strong>SKU:</strong> {product.sku}</li>
+                </ul>
               </div>
             </div>
           </div>

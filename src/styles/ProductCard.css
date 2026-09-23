@@ -73,7 +73,7 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(59, 35, 20, 0.3);
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -122,7 +122,7 @@
     position: relative;
     border-radius: 12px;
     overflow: hidden;
-    margin: auto 0;
+    margin: 0 auto;
 }
 
 .product-modal__gallery {
@@ -176,7 +176,31 @@
 .product-modal__info {
     padding: 1rem;
     width: 100%;
-    align-self: center;
-    justify-self: center;
+    display: flexbox;
+    justify-content: center;
 }
 
+.product-modal__name {
+    font-size: 2rem;
+    margin: 0 0 0.5rem;
+    color: #3B2314;
+}
+
+.product-modal__description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #6B4C35;
+    margin-bottom: 1.5rem;
+}
+
+.product-modal__specs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-modal__specs li {
+    padding: 0.4rem 0;
+    color: #6B4C35;
+    font-size: 0.95rem;
+}
