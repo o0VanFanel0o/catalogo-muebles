@@ -1,52 +1,73 @@
+/* MÓVIL */
 .hero {
-    width: 100vw;
-    padding: 0;
-    border: 0;
-    background: transparent;
-    height: 100%;
-    justify-content: center;
-  }
-  
-  .hero__image {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
+  width: 100%;
 }
-  
-  .hero__content {
-    padding: 2rem;
-    max-width: 100%;
-    max-height: 15rem;
-    text-align: left;
-    padding: 2rem;
-  
-  }
-  
-  .hero__title {
-    margin: 0 0 0.75rem;
-    font-size: 1rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    text-align: start;
-  }
-  .hero__brand{
-    color: rgb(245, 241, 234);
+
+.hero__image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5rem 1.5rem 2rem;
+}
+
+.hero__content {
+  width: 100%;
+  max-width: 100%;
+  text-align: left;
+}
+
+.hero__brand {
+  color: rgb(245, 241, 234);
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 0 0 0.75rem;
+}
+
+.hero h2 {
+  margin: 0;
+  font-size: 1.75rem;
+  line-height: 1.1;
+  color: rgb(245, 241, 234);
+}
+
+.hero p {
+  margin: 1rem 0 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: rgb(245, 241, 234);
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  .hero__image {
+      padding: 6rem 2rem 2rem;
   }
 
   .hero h2 {
-    margin: 0;
-    font-size: 2.3rem;
-    line-height: 1;
-    color: rgb(245, 241, 234);
+      font-size: 2rem;
   }
-  
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  .hero__image {
+      padding: 8rem 3rem 3rem;
+  }
+
+  .hero__content {
+      max-width: 600px;
+  }
+
+  .hero h2 {
+      font-size: 2.5rem;
+  }
+
   .hero p {
-    margin: 1rem 0 1.5rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: rgb(245, 241, 234);
+      font-size: 1.1rem;
   }
+}
