@@ -5,7 +5,6 @@ import '../styles/SpaceCategories.css'
 function SpaceCategories() {
   return (
     <section className="spaces">
-      <h2 className="spaces__title">Explora por espacio</h2>
 
       <div className="spaces__list">
         {spaces.map((space) => (

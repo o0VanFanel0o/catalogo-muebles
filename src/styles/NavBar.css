@@ -47,7 +47,7 @@
     font-weight: 600;
 }
 
-/* ===== TABLET ===== */
+/* TABLET */
 @media (min-width: 768px) {
     .navbar {
         width: calc(100% - 4rem);
@@ -60,18 +60,19 @@
     }
 }
 
-/* ===== DESKTOP ===== */
+/* DESKTOP */
 @media (min-width: 1024px) {
     .navbar {
-        top: 0;
+        top: 1rem;
         bottom: auto;
-        left: 0;
-        right: 0;
+        left: 1rem ;
+        right: 1rem;
         transform: none;
 
-        width: 100%;
-        max-width: none;
+        width: auto;
+        max-width: 100%;
         padding: .5rem .5rem;
+        margin: 1rem 1rem;
 
         background: #F5EFE6;
         backdrop-filter: none;
@@ -79,7 +80,7 @@
 
         border: 0;
         border-bottom: 1px solid #E8DDD1;
-        border-radius: 0;
+        border-radius: 4rem;
         box-shadow: 0 2px 8px rgba(59, 35, 20, 0.06);
 
         justify-content: space-between;
@@ -93,6 +94,7 @@
         color: #3B2314;
         font-size: 1rem;
         transition: color 0.3s;
+        margin-right: 1rem;
     }
 
     .navbar__link:hover {
