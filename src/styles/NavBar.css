@@ -6,6 +6,7 @@
     transform: translateX(-50%);
 
     width: 100%;
+    max-width: 100%;
     padding: 1rem 1.25rem;
     z-index: 1000;
 
