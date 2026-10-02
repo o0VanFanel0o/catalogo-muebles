@@ -21,8 +21,8 @@
 }
 
 .hero__brand {
-  color: rgb(245, 241, 234);
-  font-size: 1rem;
+  color: rgb(244, 238, 229);
+  font-size: 3rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   margin: 0 0 0.75rem;
@@ -30,16 +30,16 @@
 
 .hero h2 {
   margin: 0;
-  font-size: 1.75rem;
+  font-size: 1rem;
   line-height: 1.1;
-  color: rgb(245, 241, 234);
+  color: rgb(244, 238, 229);
 }
 
 .hero p {
   margin: 1rem 0 0;
   font-size: 1rem;
   line-height: 1.5;
-  color: rgb(245, 241, 234);
+  color: rgb(244, 238, 229);
 }
 
 /* TABLET */
@@ -60,7 +60,8 @@
   }
 
   .hero__content {
-      max-width: 600px;
+    
+
   }
 
   .hero h2 {
