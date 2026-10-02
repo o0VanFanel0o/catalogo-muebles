@@ -1,49 +1,84 @@
+/* SPACES (MÓVIL) */
 .spaces {
-    padding: 2rem 1rem;
-  }
-  
-  .spaces__title {
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-  
-  .spaces__list {
-    display: grid;
-    gap: 1rem;
-  }
-  
-  .spaces__card {
-    min-height: 110px;
-    aspect-ratio: 3 / 1;
-    padding: 1rem;
-    border-radius: 18px;
-  
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-  
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .spaces__card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
+  padding: 2rem 1rem;
+}
+
+.spaces__title {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.spaces__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.spaces__card {
+  min-height: 110px;
+  aspect-ratio: 3 / 1;
+  padding: 1rem;
+  border-radius: 18px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.spaces__card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
       135deg,
       rgba(0, 0, 0, 0.05),
       rgba(0, 0, 0, 0.28)
-    );
+  );
+}
+
+.spaces__name {
+  position: relative;
+  z-index: 1;
+
+  color: rgb(245, 241, 234);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  .spaces {
+      padding: 3rem 2rem;
   }
-  
+
+  .spaces__list {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+  }
+
   .spaces__name {
-    position: relative;
-    z-index: 1;
-  
-    color: rgb(245, 241, 234);
-    font-size: 1.4rem;
-    font-weight: 700;
+      font-size: 1.2rem;
   }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  .spaces {
+      padding: 4rem 3rem;
+  }
+
+  .spaces__list {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+  }
+
+  .spaces__name {
+      font-size: 1.4rem;
+  }
+}
