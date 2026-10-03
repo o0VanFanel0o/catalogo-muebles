@@ -22,8 +22,6 @@ function FeaturedProducts() {
       <p>Cargando...</p>
     ) : (
     <section className="featured">
-      <h2 className="featured__title">Destacados</h2>
-
       <div className="featured__list">
         {productos.slice(0, 3).map((product) => (
           <Link to={`/producto/${product.id}`} 

@@ -45,7 +45,7 @@
 /* DESKTOP */
 @media (min-width: 1024px) {
     .about {
-        padding: 5rem 3rem;
+        padding: 5rem 3rem 0 3rem;
     }
 
     .about__title {

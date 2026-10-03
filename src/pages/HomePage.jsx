@@ -8,8 +8,8 @@ function HomePage() {
     <main>
         <Hero />
         <AboutUs />
-        <SpaceCategories />
         <FeaturedProducts />
+        <SpaceCategories />
     </main>
   )
 }

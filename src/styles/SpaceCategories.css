@@ -70,7 +70,7 @@
 /* DESKTOP */
 @media (min-width: 1024px) {
   .spaces {
-      padding: 4rem 3rem;
+      padding: 4rem 3rem 0 3rem;
   }
 
   .spaces__list {
