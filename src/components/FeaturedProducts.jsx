@@ -23,7 +23,7 @@ function FeaturedProducts() {
     ) : (
     <section className="featured">
       <div className="featured__list">
-        {productos.slice(0, 3).map((product) => (
+        {productos.slice(0, 6).map((product) => (
           <Link to={`/producto/${product.id}`} 
           className="featured__card" 
           key={product.id}>
