@@ -1,106 +1,132 @@
+/* CATALOG (MÓVIL) */
+.catalog {
+  padding: 1rem 0;
+}
+
+/* HEADER */
 .catalog__header {
   display: flex;
-  padding: 2rem;
   flex-direction: column;
-  align-items: start;
-  gap: 1rem;
-  p {
-    color: rgb(190, 92, 1);
-    margin: 0;
-  }
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 4rem 1rem;
 }
 
-.catalog__products {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 20px;
-    padding: 40px 24px 56px;
-}
-.catalog__products {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    padding-top: 1rem;
+.catalog__header h1 {
+  margin: 0;
+  font-size: 1.75rem;
+  color: #3B2314;
 }
 
-/* ===== FILTERS ===== */
+.catalog__header p {
+  color: rgb(190, 92, 1);
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* FILTROS */
 .catalog__filters {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    justify-content: center;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  gap: 0.5rem;
+  padding: 0 1rem 0 1rem;
+  justify-content: flex-start;
+}
+
+.catalog__filters::-webkit-scrollbar {
+  display: none;
+}
+
+.catalog__filter {
+  flex: 0 0 auto;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.catalog__filter span {
+  display: inline-block;
+  white-space: nowrap;
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.catalog__filter .hover-underline-animation {
+  position: relative;
+  color: black;
+}
+
+.catalog__filter .hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.catalog__filter .hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* PRODUCTOS */
+.catalog__products {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  padding: 0 1rem 2rem;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  .catalog__header {
+      padding: 2rem;
   }
-  .catalog__filter {
-    border: none;
-    background: none;
-    cursor: pointer;
+
+  .catalog__header h1 {
+      font-size: 2rem;
   }
-  
-  .catalog__filter span {
-    padding-bottom: 7px;
-    letter-spacing: 4px;
-    font-size: 14px;
-    padding-right: 15px;
-    text-transform: uppercase;
+
+  .catalog__filters {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 3rem;
+      overflow-x: visible;
+      padding: 1rem;
   }
-  
-  .catalog__filter svg {
-    transform: translateX(-8px);
-    transition: all 0.3s ease;
+
+  .catalog__products {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      padding: 0 2rem 3rem;
   }
-  
-  .catalog__filter:hover svg {
-    transform: translateX(0);
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  .catalog__header {
+      padding: 5rem 3rem 2rem 3rem;
   }
-  
-  .catalog__filter:active svg {
-    transform: scale(0.9);
+
+  .catalog__header h1 {
+      font-size: 2.5rem;
   }
-  
-  .catalog__filter .hover-underline-animation {
-    position: relative;
-    color: black;
+
+  .catalog__products {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.25rem;
+      padding: 0 3rem 4rem;
   }
-  
-  .catalog__filter .hover-underline-animation:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #000000;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-  
-  .catalog__filter .hover-underline-animation:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-  @media (max-width: 768px) {
-    .catalog__filters {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-        gap: 0.5rem;
-        padding: 0 1rem;
-        justify-content: flex-start;
-      }
-    
-      .catalog__filters::-webkit-scrollbar {
-        display: none;
-      }
-    
-      .catalog__filter {
-        flex: 0 0 auto;
-      }
-      .catalog__filter span {
-        white-space: nowrap;
-        display: inline-block;
-      }
-    }
+}
