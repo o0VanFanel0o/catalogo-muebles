@@ -78,6 +78,7 @@
   letter-spacing: 0.5px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.15s;
+  margin-bottom: 2rem;
 }
 
 .contact-page__btn:hover {
@@ -88,7 +89,8 @@
   transform: scale(0.98);
 }
 
-/* ===== TABLET ===== */
+
+/* TABLET */
 @media (min-width: 768px) {
   .contact-page__header {
     padding: 7rem 2rem 3rem;
@@ -99,7 +101,7 @@
   }
 }
 
-/* ===== DESKTOP ===== */
+/* DESKTOP */
 @media (min-width: 1024px) {
   .contact-page__header {
     padding: 6rem 3rem 2rem 3rem;
